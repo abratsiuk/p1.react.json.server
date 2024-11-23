@@ -21,6 +21,19 @@ npm install react-router-dom
 
 npm run dev
 ```
+```
+README
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+/*
+HMR (Hot Module Replacement) — это технология, которая позволяет обновлять модули приложения на лету без необходимости полной перезагрузки страницы. Она используется для улучшения процесса разработки, сокращая время на тестирование изменений.*/
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
 
 ### 1.2. otcher
 
