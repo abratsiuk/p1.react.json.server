@@ -147,3 +147,6 @@ npm start
 
 ![](_md_img/flow_images/flow%202024-11-23-12-23-04.png)
 ![](_md_img/flow_images/flow%202024-11-23-12-23-33.png)
+
+---------------
+## 2. refactor movies to SPA

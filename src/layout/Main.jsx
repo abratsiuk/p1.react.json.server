@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Movies } from '../component/Movies';
 import { Preloader } from '../component/Preloader';
 import { Search } from '../component/Search';
-import { getHotels } from '../services/hotelsApi';
+import { getMovies } from '../services/movieApi';
 
 function Main() {
     const [movies, setMovies] = useState([]);
@@ -10,7 +10,7 @@ function Main() {
 
     const reloadMovies = (search, type) => {
         setLoading(true);
-        getHotels(search, type)
+        getMovies(search, type)
             .then((data) => {
                 setMovies(data.Search);
                 setLoading(false);
