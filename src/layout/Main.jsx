@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Movies } from '../component/Movies';
 import { Preloader } from '../component/Preloader';
 import { Search } from '../component/Search';
-
-// eslint-disable-next-line no-undef
-const API_KEY = '8680c009';
+import { getHotels } from '../services/hotelsApi';
 
 function Main() {
     const [movies, setMovies] = useState([]);
@@ -12,10 +10,7 @@ function Main() {
 
     const reloadMovies = (search, type) => {
         setLoading(true);
-        const typeParam = type !== 'all' ? `&type=${type}` : '';
-        const url = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}${typeParam}`;
-        fetch(url)
-            .then((response) => response.json())
+        getHotels(search, type)
             .then((data) => {
                 setMovies(data.Search);
                 setLoading(false);

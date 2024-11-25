@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 
 function Search(props) {
     const [search, setSearch] = useState('matrix');
@@ -72,9 +71,5 @@ function Search(props) {
         </div>
     );
 }
-
-Search.propTypes = {
-    reloadMovies: PropTypes.func.isRequired,
-};
 
 export { Search };

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 function Movie(props) {
     const {
@@ -41,12 +40,5 @@ function Movie(props) {
         </div>
     );
 }
-Movie.propTypes = {
-    Title: PropTypes.string.isRequired,
-    Year: PropTypes.string.isRequired,
-    imdbID: PropTypes.string.isRequired,
-    Type: PropTypes.string.isRequired,
-    Poster: PropTypes.string,
-};
 
 export { Movie };
