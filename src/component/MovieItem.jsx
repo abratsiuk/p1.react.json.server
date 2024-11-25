@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Movie(props) {
+function MovieItem(props) {
     const {
         Title: title,
         Year: year,
@@ -36,9 +36,10 @@ function Movie(props) {
                 <p>
                     {year} <span className='right'>{type}</span>
                 </p>
+                <p>imdbID: {id}</p>
             </div>
         </div>
     );
 }
 
-export { Movie };
+export { MovieItem };

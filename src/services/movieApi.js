@@ -6,4 +6,9 @@ const getMovies = async (search, type) => {
     return await response.json();
 };
 
-export { getMovies };
+const getMovie = async (id) => {
+    const response = await fetch(API_URL + `&plot=full&i=${id}`);
+    return await response.json();
+};
+
+export { getMovies, getMovie };

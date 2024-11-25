@@ -26,10 +26,10 @@ function Main() {
     }, []);
 
     return (
-        <main className='container content'>
+        <>
             <Search reloadMovies={reloadMovies} />
             {loading ? <Preloader /> : <Movies movies={movies} />}
-        </main>
+        </>
     );
 }
 

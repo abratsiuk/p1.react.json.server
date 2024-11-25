@@ -1,5 +1,5 @@
 import React from 'react';
-import { Movie } from './Movie';
+import { MovieItem } from './MovieItem';
 
 function Movies(props) {
     const { movies = [] } = props;
@@ -8,7 +8,7 @@ function Movies(props) {
         <div className='movies'>
             {movies.length ? (
                 movies.map((movie) => (
-                    <Movie
+                    <MovieItem
                         key={movie.imdbID}
                         {...movie}
                     />
