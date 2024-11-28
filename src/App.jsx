@@ -10,26 +10,24 @@ function App() {
     return (
         <>
             <Router basename='/p1.react.json.server'>
-                <div className='App'>
-                    <Header />
-                    <main className='container content'>
-                        <Routes>
-                            <Route
-                                path='/'
-                                element={<Main />}
-                            />
-                            <Route
-                                path='/movie/:id'
-                                element={<Movie />}
-                            />
-                            <Route
-                                path='*'
-                                element={<NotFound />}
-                            />
-                        </Routes>
-                    </main>
-                    <Footer />
-                </div>
+                <Header />
+                <main className='container content'>
+                    <Routes>
+                        <Route
+                            path='/'
+                            element={<Main />}
+                        />
+                        <Route
+                            path='/movie/:id'
+                            element={<Movie />}
+                        />
+                        <Route
+                            path='*'
+                            element={<NotFound />}
+                        />
+                    </Routes>
+                </main>
+                <Footer />
             </Router>
         </>
     );

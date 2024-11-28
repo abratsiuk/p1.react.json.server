@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function MovieFull(props) {
     const {
@@ -7,8 +8,10 @@ function MovieFull(props) {
         imdbID: id,
         Type: type,
         Poster: poster,
-    } = props;
+    } = props?.movie;
+    console.log(props.movie);
 
+    const navigate = useNavigate();
     return (
         <div
             id={id}
